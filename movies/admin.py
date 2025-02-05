@@ -10,6 +10,5 @@ class MovieAdmin(admin.ModelAdmin):
         'genre',
         'release_date',
         'rating', 
-        'actors', 
         'resume', 
     )
