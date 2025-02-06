@@ -4,7 +4,7 @@ from actors.models import Actor
 from genres.models import Genre
 
 class Movie(models.Model):
-    title = models.CharField(max_length=500)
+    name = models.CharField(max_length=500)
     genre = models.ForeignKey( # ligação 1-to-n
         Genre,
         on_delete=models.PROTECT,

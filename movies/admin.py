@@ -6,7 +6,7 @@ from movies.models import Movie
 class MovieAdmin(admin.ModelAdmin):
     list_display = (
         'id',
-        'title', 
+        'name', 
         'genre',
         'release_date',
         'rating', 
