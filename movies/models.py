@@ -19,4 +19,4 @@ class Movie(models.Model):
     resume = models.TextField(null=True, blank=True)
     
     def __str__(self):
-        return self.title
+        return self.name
