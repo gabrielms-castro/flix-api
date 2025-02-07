@@ -11,7 +11,8 @@ from .serializers import GenreSerializer
 class GenreCreateListView(generics.ListCreateAPIView):
     queryset = Genre.objects.all()
     serializer_class = GenreSerializer
-
+    filter_backends = [filters.SearchFilter]
+    search_fields = ['name']
     @extend_schema(
         parameters=[
             OpenApiParameter(
